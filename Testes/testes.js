@@ -1,8 +1,14 @@
-// Criar função anônima que retorne a frase "fui clicado"
+/*const botao = document.querySelector([data-botao]);
 
-const calcular = document.querySelector("#calcular");
-const resultado = document.querySelector(".resultado");
+botao.addEventListener("click", () => {
+    none;
+})*/
 
-calcular.addEventListener("click", () => {
-    resultado.innerHTML = "Fui clicado :o";
-});
+const lista = document.querySelector("ul");
+document.querySelector("#botao").addEventListener("click", () => {
+    lista.setAttribute("data-lista", "mostrar");
+})
+
+document.querySelector(".close").addEventListener("click", () => {
+    lista.setAttribute("data-lista", "esconder");
+})
